@@ -34,7 +34,7 @@ form {
 }
 
 form div {
-    display: inline-block;
+    overflow: hidden;
     width: 100%;
     margin-bottom: 1%;
 }
