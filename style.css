@@ -7,6 +7,7 @@
 body {
     background-color: lightgray;
     font-family: 'Mali', cursive;
+
     /* to center the content  */
     margin: 0;
     padding: 0;
@@ -62,14 +63,81 @@ input {
     float: right;
 }
 
-.username-icon {
-    background: lightgray url(man.png) no-repeat 0 0;
+input[class*="icon"] {
     background-size: 1em;
     background-position: 98% 50%;
 }
 
+.username-icon {
+    background: lightgray url(man.png) no-repeat 0 0;
+}
+
 .password-icon {
     background: lightgray url(lock.png) no-repeat 0 0;
-    background-size: 1em;
-    background-position: 98% 50%;
+}
+
+/*checkbox formatting*/
+label {
+    font-size: 0.7em;
+    color: grey;
+    display: block;
+}
+
+input[type=checkbox] {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+input[type=checkbox]:checked + label:before {
+    background: url('checked.png') left center no-repeat;
+}
+
+label[for=terms]:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    display: inline-block;
+    background: url(unchecked.png) left center no-repeat;
+}
+/*------------*/
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+}
+
+.center {
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+}
+
+.truncate {
+    padding: 0 30%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button {
+    background-color: #fea15d;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-family: 'Mali', cursive;
+    border-radius: 5px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: grey;
 }
