@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Mali');
 
+:root {
+    --main-bg-color: #f7f7f7;
+    --input-bg-color: #f0f0f0;
+    --input-font-color: #c6c6c6;
+    --font-color: #949494;
+    --shadow-color: #f3f3f3;
+    --btn-color: #fea15d;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: lightgray;
+    background-color: var(--main-bg-color);
     font-family: 'Mali', cursive;
 
     /* to center the content  */
@@ -23,29 +32,29 @@ body {
 
 h1 {
     font-weight: normal;
-    color: grey;
+    color: var(--font-color);
 }
 
 form {
     background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 0 10px grey;
+    border-radius: 3px;
+    box-shadow: 0 0 10px var(--shadow-color);
     padding: 4%;
 }
 
 form div {
     overflow: hidden;
     width: 100%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 input {
     padding: 1%;
-    background-color: lightgray;
+    background-color: var(--input-bg-color);
     background-size: 1em;
-    color: grey;
-    border: 1px solid darkgrey;
-    border-radius: 5px;
+    color: var(--input-font-color);
+    border: none;
+    border-radius: 1px;
     padding-right: 30px;
     width: 100%;
     font-family: 'Mali', cursive;
@@ -69,17 +78,17 @@ input[class*="icon"] {
 }
 
 .username-icon {
-    background: lightgray url(man.png) no-repeat 0 0;
+    background: var(--input-bg-color) url(man.png) no-repeat 0 0;
 }
 
 .password-icon {
-    background: lightgray url(lock.png) no-repeat 0 0;
+    background: var(--input-bg-color) url(lock.png) no-repeat 0 0;
 }
 
 /*checkbox formatting*/
 label {
     font-size: 0.7em;
-    color: grey;
+    color: var(--font-color);
     display: block;
 }
 
@@ -104,12 +113,13 @@ label[for=terms]:before {
     display: inline-block;
     background: url(unchecked.png) left center no-repeat;
 }
+
 /*------------*/
 
 a {
     text-decoration: none;
     font-weight: bold;
-    color: grey;
+    color: var(--font-color);
 }
 
 .center {
@@ -119,14 +129,14 @@ a {
 }
 
 .truncate {
-    padding: 0 30%;
+    padding: 0 10%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 button {
-    background-color: #fea15d;
+    background-color: var(--btn-color);
     border: none;
     color: white;
     padding: 10px 25px;
@@ -139,5 +149,5 @@ button {
 
 button:hover {
     background-color: white;
-    color: grey;
+    color: var(--font-color);
 }
