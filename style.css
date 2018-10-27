@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Mali');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    font-family: 'Mali', cursive;
+    /* to center the content  */
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: normal;
+    color: grey;
+}
+
+form {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px grey;
+    padding: 4%;
+}
+
+form div {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+input {
+    padding: 1%;
+    background-color: lightgray;
+    background-size: 1em;
+    color: grey;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    padding-right: 30px;
+    width: 100%;
+    font-family: 'Mali', cursive;
+}
+
+.input-name {
+    width: 49%;
+}
+
+.fname {
+    float: left;
+}
+
+.lname {
+    float: right;
+}
+
+.username-icon {
+    background: lightgray url(man.png) no-repeat 0 0;
+    background-size: 1em;
+    background-position: 98% 50%;
+}
+
+.password-icon {
+    background: lightgray url(lock.png) no-repeat 0 0;
+    background-size: 1em;
+    background-position: 98% 50%;
+}
