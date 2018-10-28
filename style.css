@@ -3,14 +3,20 @@
 :root {
     --main-bg-color: #f7f7f7;
     --input-bg-color: #f0f0f0;
-    --input-font-color: #c6c6c6;
+    --input-font-color: #b7b7b7;
     --font-color: #949494;
-    --shadow-color: #f3f3f3;
+    --link-font-color: #b6b6b6;
+    --shadow-color: #eaeaea;
     --btn-color: #fea15d;
+    --footer-font-color: #dddddd;
 }
 
 * {
     box-sizing: border-box;
+}
+
+h1 {
+    font-size: 22px;
 }
 
 body {
@@ -37,31 +43,32 @@ h1 {
 
 form {
     background-color: white;
-    border-radius: 3px;
-    box-shadow: 0 0 10px var(--shadow-color);
-    padding: 4%;
+    border-radius: 6px;
+    box-shadow: 0 0 1px var(--shadow-color);
+    padding: 27px 30px;
+    width: 339px;
+    height: 349px;
 }
 
 form div {
     overflow: hidden;
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 13px;
 }
 
 input {
-    padding: 1%;
+    padding: 12px 30px 12px 10px;
     background-color: var(--input-bg-color);
-    background-size: 1em;
     color: var(--input-font-color);
     border: none;
-    border-radius: 1px;
-    padding-right: 30px;
+    border-radius: 4px;
     width: 100%;
     font-family: 'Mali', cursive;
+    height: 35px;
 }
 
 .input-name {
-    width: 49%;
+    width: 137px;
 }
 
 .fname {
@@ -73,7 +80,6 @@ input {
 }
 
 input[class*="icon"] {
-    background-size: 1em;
     background-position: 98% 50%;
 }
 
@@ -87,8 +93,8 @@ input[class*="icon"] {
 
 /*checkbox formatting*/
 label {
-    font-size: 0.7em;
-    color: var(--font-color);
+    font-size: 11px;
+    color: var(--footer-font-color);
     display: block;
 }
 
@@ -112,6 +118,7 @@ label[for=terms]:before {
     cursor: pointer;
     display: inline-block;
     background: url(unchecked.png) left center no-repeat;
+    margin-right: 9px;
 }
 
 /*------------*/
@@ -119,32 +126,35 @@ label[for=terms]:before {
 a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--font-color);
+    color: var(--link-font-color);
 }
 
 .center {
-    margin-left: 25%;
-    width: 50%;
     text-align: center;
 }
 
+.center label {
+    color: var(--footer-font-color);
+}
+
 .truncate {
-    padding: 0 10%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 0 27%;
 }
 
 button {
     background-color: var(--btn-color);
     border: none;
     color: white;
-    padding: 10px 25px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Mali', cursive;
-    border-radius: 5px;
+    border-radius: 4px;
     transition-duration: 0.6s;
     cursor: pointer;
+    width: 95px;
+    height: 35px;
 }
 
 button:hover {
