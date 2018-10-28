@@ -15,11 +15,13 @@
     box-sizing: border-box;
 }
 
-h1 {
+.main-topic {
     font-size: 22px;
+    font-weight: normal;
+    color: var(--font-color);
 }
 
-body {
+.main-section {
     background-color: var(--main-bg-color);
     font-family: 'Mali', cursive;
 
@@ -32,16 +34,11 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.bold {
+.bold-font {
     font-weight: bold;
 }
 
-h1 {
-    font-weight: normal;
-    color: var(--font-color);
-}
-
-form {
+.registration-form {
     background-color: white;
     border-radius: 6px;
     box-shadow: 0 0 1px var(--shadow-color);
@@ -50,13 +47,13 @@ form {
     height: 349px;
 }
 
-form div {
+.input-row {
     overflow: hidden;
     width: 100%;
     margin-bottom: 13px;
 }
 
-input {
+.input-field {
     padding: 12px 30px 12px 10px;
     background-color: var(--input-bg-color);
     color: var(--input-font-color);
@@ -67,19 +64,19 @@ input {
     height: 35px;
 }
 
-.input-name {
+.input-field-name {
     width: 137px;
 }
 
-.fname {
+.input-field-name-first {
     float: left;
 }
 
-.lname {
+.input-field-name-last {
     float: right;
 }
 
-input[class*="icon"] {
+.input-field[class*="icon"] {
     background-position: 98% 50%;
 }
 
@@ -92,13 +89,13 @@ input[class*="icon"] {
 }
 
 /*checkbox formatting*/
-label {
+.label {
     font-size: 11px;
     color: var(--footer-font-color);
     display: block;
 }
 
-input[type=checkbox] {
+.input-field[type=checkbox] {
     display: none;
     position: absolute;
     opacity: 0;
@@ -107,44 +104,42 @@ input[type=checkbox] {
     width: 0;
 }
 
-input[type=checkbox]:checked + label:before {
+.input-field[type=checkbox]:checked + .label:before {
     background: url('../images/checked.png') left center no-repeat;
 }
 
-label[for=terms]:before {
+.label[for=terms]:before {
     content: "";
     width: 15px;
     height: 15px;
     cursor: pointer;
     display: inline-block;
     background: url(../images/unchecked.png) left center no-repeat;
-    margin-right: 9px;
 }
-
 /*------------*/
 
-a {
+.link {
     text-decoration: none;
     font-weight: bold;
     color: var(--link-font-color);
 }
 
-.center {
+.center-section {
     text-align: center;
 }
 
-.center label {
+.center-section label {
     color: var(--footer-font-color);
 }
 
-.truncate {
+.truncate-section {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 0 27%;
 }
 
-button {
+.btn-submit {
     background-color: var(--btn-color);
     border: none;
     color: white;
@@ -157,7 +152,7 @@ button {
     padding: 0 25px;
 }
 
-button:hover {
+.btn-submit:hover {
     background-color: white;
     color: var(--font-color);
 }

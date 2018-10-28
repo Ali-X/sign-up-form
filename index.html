@@ -5,38 +5,44 @@
     <title>Signup Form</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<h1><span class="bold">Signup</span> Form</h1>
-<form method="post">
-    <div>
-        <input class="input-name fname" type="text" name="fname" id="fname" placeholder="First Name"/>
-        <input class="input-name lname" type="text" name="lname" id="lname" placeholder="Last Name"/>
+<body class="main-section">
+<h1 class="main-topic"><span class="bold-font">Signup</span> Form</h1>
+<form class="registration-form" method="post">
+    <div class="input-row">
+        <input class="input-field input-field-name input-field-name-first" type="text" name="fname" id="fname"
+               placeholder="First Name"/>
+        <input class="input-field input-field-name input-field-name-last" type="text" name="lname" id="lname"
+               placeholder="Last Name"/>
     </div>
 
-    <div>
-        <input class="username-icon" type="text" name="uname" id="uname" placeholder="Username"/>
+    <div class="input-row">
+        <input class="input-field username-icon" type="text" name="uname" id="uname" placeholder="Username"/>
     </div>
 
-    <div>
-        <input type="email" name="email" id="email" placeholder="Email Address"/>
+    <div class="input-row">
+        <input class="input-field" type="email" name="email" id="email" placeholder="Email Address"/>
     </div>
 
-    <div>
-        <input class="password-icon" type="password" name="password" id="password" placeholder="Password"/>
+    <div class="input-row">
+        <input class="input-field password-icon" type="password" name="password" id="password" placeholder="Password"/>
     </div>
 
-    <div class="checkbox">
-        <input type="checkbox" name="terms" id="terms" checked>
-        <label for="terms">I Agree to the <a href="https://www.google.com">terms of use</a></label>
+    <div class="input-row checkbox">
+        <input class="input-field" type="checkbox" name="terms" id="terms" checked>
+        <label class="label" for="terms">
+            I Agree to the <a class="link" href="https://www.google.com">terms of use</a>
+        </label>
     </div>
 
-    <div class="center">
-        <button>Sign Up</button>
+    <div class="input-row center-section">
+        <button class="btn-submit">Sign Up</button>
     </div>
 
-    <div class="center">
-        <label>Have an account with us? <a href="https://www.google.com">Login here</a></label>
-        <label class="truncate">More info about us hereblablablablabla</label>
+    <div class="input-row center-section">
+        <label class="label">
+            Have an account with us? <a class="link" href="https://www.google.com">Login here</a>
+        </label>
+        <label class="label truncate-section">More info about us hereblablablablabla</label>
     </div>
 </form>
 </body>
