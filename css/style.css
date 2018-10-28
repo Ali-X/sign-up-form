@@ -45,7 +45,7 @@ form {
     background-color: white;
     border-radius: 6px;
     box-shadow: 0 0 1px var(--shadow-color);
-    padding: 27px 30px;
+    padding: 30px 27px;
     width: 339px;
     height: 349px;
 }
@@ -84,11 +84,11 @@ input[class*="icon"] {
 }
 
 .username-icon {
-    background: var(--input-bg-color) url(man.png) no-repeat 0 0;
+    background: var(--input-bg-color) url(../images/man.png) no-repeat 0 0;
 }
 
 .password-icon {
-    background: var(--input-bg-color) url(lock.png) no-repeat 0 0;
+    background: var(--input-bg-color) url(../images/lock.png) no-repeat 0 0;
 }
 
 /*checkbox formatting*/
@@ -108,7 +108,7 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:checked + label:before {
-    background: url('checked.png') left center no-repeat;
+    background: url('../images/checked.png') left center no-repeat;
 }
 
 label[for=terms]:before {
@@ -117,7 +117,7 @@ label[for=terms]:before {
     height: 15px;
     cursor: pointer;
     display: inline-block;
-    background: url(unchecked.png) left center no-repeat;
+    background: url(../images/unchecked.png) left center no-repeat;
     margin-right: 9px;
 }
 
@@ -153,8 +153,8 @@ button {
     border-radius: 4px;
     transition-duration: 0.6s;
     cursor: pointer;
-    width: 95px;
     height: 35px;
+    padding: 0 25px;
 }
 
 button:hover {
